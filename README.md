@@ -52,13 +52,15 @@ jupyter notebook Udacity_Project.ipynb
 2. **What is the relationship between years of professional experience and salary?** (Positive, diminishing marginal gains at higher experience.)  
 3. **Does working remotely relate to higher compensation?** (Patterns differ by country; remote status interacts with geography and role.)  
 4. **How does company size relate to pay?** (Mid‑to‑large orgs often pay more; inspect by region.)  
-5. **Which self‑reported traits show the strongest association with salary?** (SHAP ranks features—commonly years of professional coding, country/region, company size, role, education.)
 
 ## Results (summary)
-- A baseline Random Forest performs competitively for tabular survey data (see MAE/R² in the notebook).  
-- **Top drivers (SHAP):** years of professional coding, country/region, company size, role, and education typically dominate.  
+- A baseline Random Forest performs competitively for tabular survey data:
+Random Forest performance on the held-out test set:
+- **MSE: 87277116.7023**
+- **MAE: 2628.9396**
+- **R²: 0.9666**
 - Findings should be interpreted cautiously due to self‑reporting and regional mix.
 
 ## Acknowledgments
 - Stack Overflow – Developer Survey data.  
-- Open‑source libraries: pandas, numpy, matplotlib, seaborn, scikit‑learn, shap, catboost, xgboost.
+- Open‑source libraries: pandas, numpy, matplotlib, seaborn, scikit‑learn
