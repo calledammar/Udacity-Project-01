@@ -21,4 +21,4 @@ Talking about pay is hard, but data helps. Using the Stack Overflow Developer Su
 **Limitations**
 This is self‑reported survey data and reflects the sample who responded. Results can vary across years and geographies, so treat conclusions as directional, not definitive.
 
-Want the details? The full notebook (EDA → data prep → SHAP → model → evaluation) lives in the repository.
+Want the details? The full notebook (EDA → data prep  → model → evaluation) lives in the repository.
