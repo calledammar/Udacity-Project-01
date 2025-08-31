@@ -25,7 +25,6 @@ Compensation varies widely across countries, roles, and experience. The aim is t
 Tested with Python 3.9+
 - Core: `pandas`, `numpy`, `matplotlib`, `seaborn`
 - Modeling: `scikit-learn` (RandomForestRegressor, pipelines)
-- Explainability: `shap` *or* CatBoost’s SHAP values (TreeExplainer)
 - Optional: `xgboost`, `catboost`
 
 > Tip: create a virtual env, then `pip install -r requirements.txt` (include the packages above).
@@ -42,10 +41,11 @@ jupyter notebook Udacity_Project.ipynb
 ## CRISP‑DM Overview
 1. **Business Understanding** – Estimate developer salary and understand key drivers.  
 2. **Data Understanding** – EDA of distributions, missingness, and relationships (e.g., salary vs. experience, company size).  
-3. **Data Preparation** – Clean target, engineer experience fields, one‑hot encode categoricals, split train/test.  
-4. **Modeling** – Random Forest (trees don’t require scaling); hyperparameters set for stability.  
-5. **Evaluation** – Report MAE/MSE/R² on the test set.  
-6. **Interpretation (Pre‑test)** – Compute SHAP values on preprocessed *training* data to study feature impact before peeking at the test set.
+3. **Data Preparation** – Clean target, engineer experience fields, one‑hot encode categoricals, split train/test.
+4. **Exploratory Questions and Answers** - Before building predictive models, it's important to explore the cleaned data and answer business-oriented questions that provide context. Here we pose several questions and answer them using visualizations and summary statistics.
+5. **Modeling** – Random Forest (trees don’t require scaling); hyperparameters set for stability.  
+6. **Evaluation** – Report MAE/MSE/R² on the test set.  
+7. **Conclusion** - Final Concusions and reccomendations
 
 ## Exploratory Questions (asked & answered in the notebook)
 1. **How is compensation distributed?** (Right‑skewed; long tail; use hist/boxplot; winsorize/cap for clarity.)  
